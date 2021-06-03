@@ -4,6 +4,7 @@ import AboutUs from './AboutUs'
 import Landing from './LandingPage';
 import Cart from './Cart';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import IndividualProducts from './IndividualProducts';
 
 
 
@@ -23,8 +24,11 @@ export default function Navbar() {
             <Landing />
           </Route>
           
-          <Route path ="/Products">
+          <Route path ="/Products/">
             <ProductsPage />
+          </Route>
+          <Route path="/Products/:id">
+            <IndividualProducts />
           </Route>
 
           <Route path ="/AboutUs">

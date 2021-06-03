@@ -1,26 +1,28 @@
-
+import img1 from './chris-lynch-bj0383cEGuc-unsplash.jpg'
+import img2 from './madalyn-cox-86OQkWZ-sBc-unsplash.jpg'
+import img3 from './earlybird-coffee-mSjTAV7JuV4-unsplash.jpg'
 const initialState=[
     {
         title:"Columbian Medium Roast",
-        img:"url",
+        img:img1,
         info:"",
-        price:"",
+        price:"$17.29",
         key:"1",
 
     },
     {
         title:"Ethiopian Dark Roast",
-        img:"url",
+        img:img2,
         info:"",
-        price:"",
+        price:"$16.53",
         key:"2",
         
     },
     {
-        title:"Panama Medium Roast",
-        img:"url",
+        title:"Costa Rican Medium Roast",
+        img:img3,
         info:"",
-        price:"",
+        price:"$15.79",
         key:"3",
     
     },   
@@ -30,7 +32,7 @@ const initialState=[
 function productReducer(state = initialState, action) {
     switch (action.type) {
       case "PRODUCTDISPLAY":
-        return (state = action.payload);
+        return console.log(state);
     
       default:
         return state;
