@@ -20,23 +20,16 @@ export default function Navbar() {
           </nav>
           </div>
         <Switch>
-          <Route exact path ="/">
-            <Landing />
-          </Route>
+          <Route exact path ="/" components={Landing}></Route>
           
-          <Route path ="/Products/">
-            <ProductsPage />
-          </Route>
-          <Route path="/IndividualProducts/:id" >
-            <IndividualProducts />
-          </Route>
-
-          <Route path ="/AboutUs">
-            <AboutUs />
-          </Route>
-          <Route path="/Cart">
-              <Cart />
-          </Route>
+          <Route path ="/Products/" component={ProductsPage}></Route>
+        
+          <Route path="/IndividualProducts/:id" component={IndividualProducts}></Route>
+          
+          <Route path ="/AboutUs" component={AboutUs}></Route>
+         
+          <Route path="/Cart" component={Cart} ></Route>
+          
         </Switch>
       </Router>
             
