@@ -27,7 +27,7 @@ export default function Navbar() {
           <Route path ="/Products/">
             <ProductsPage />
           </Route>
-          <Route path="/Products/:id">
+          <Route path="/IndividualProducts/:id" >
             <IndividualProducts />
           </Route>
 

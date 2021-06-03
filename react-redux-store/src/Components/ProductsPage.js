@@ -15,7 +15,7 @@ export default function ProductsPage() {
                     <img src={products.img} alt="coffeeimg" height="300" width="250"/>
                     <h3>{products.info}</h3>
                     <h1>{products.price}</h1>
-                    <Link path="/Products/:{products.key}"> More Info</Link>
+                    <Link to={`/IndividualProducts/${products.id}`} Id ={products.id}> Sip on more info</Link>
                     <button>Add to Cart</button>
                     </div>
                 ))

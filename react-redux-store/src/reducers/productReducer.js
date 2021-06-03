@@ -7,7 +7,7 @@ const initialState=[
         img:img1,
         info:"",
         price:"$17.29",
-        key:"1",
+        id:"1",
 
     },
     {
@@ -15,7 +15,7 @@ const initialState=[
         img:img2,
         info:"",
         price:"$16.53",
-        key:"2",
+        id:"2",
         
     },
     {
@@ -23,7 +23,7 @@ const initialState=[
         img:img3,
         info:"",
         price:"$15.79",
-        key:"3",
+        id:"3",
     
     },   
 
