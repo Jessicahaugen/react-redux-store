@@ -1,10 +1,12 @@
 // import React from 'react';
 import ProductsPage from './ProductsPage';
 import AboutUs from './AboutUs'
-import Landing from './LandingPage';
 import Cart from './Cart';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import IndividualProducts from './IndividualProducts';
+import LandingPage from './LandingPage';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { AppBar } from '@material-ui/core';
+
 
 
 
@@ -12,17 +14,28 @@ export default function Navbar() {
     return (
         <Router>
         <div>
-            <nav>
-             <Link to="/">Home</Link>
-             <Link to="/Products">Shop</Link>
-             <Link to="/AboutUs">About Us</Link>
-             <Link to="/Cart"><img src="react-redux-store/src/shopping-cart-solid.svg"/></Link>
-          </nav>
+            <nav className="nav" color="transparent" >
+              <div>
+                <Link to="/" className="linkDecor">Home</Link>
+             </div>
+             <div>
+             <Link to="/Products" className="linkDecor">Coffee</Link>
+             </div>
+             <div>
+             <h1>Cleo Coffee</h1>
+             </div>
+             <div>
+             <Link to="/AboutUs" className="linkDecor">About</Link>
+             </div>
+             <div>
+             <Link to="/Cart" className="linkDecor">Cart</Link>
+             </div>
+            </nav>
           </div>
         <Switch>
-          <Route exact path ="/" components={Landing}></Route>
+          <Route exact path ="/" component={LandingPage}></Route>
           
-          <Route path ="/Products/" component={ProductsPage}></Route>
+          <Route path ="/Products" component={ProductsPage}></Route>
         
           <Route path="/IndividualProducts/:id" component={IndividualProducts}></Route>
           

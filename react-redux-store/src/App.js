@@ -1,14 +1,14 @@
-
+import React from 'react'
 import "./App.css";
-
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar"
+import LandingPage from './Components/LandingPage';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>React Redux Store</h1>
-      <Navbar />
+      <Navbar /> 
+      {/* <LandingPage /> */}
     </div>
   );
 }
