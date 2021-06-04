@@ -5,7 +5,7 @@ import Cart from './Cart';
 import IndividualProducts from './IndividualProducts';
 import LandingPage from './LandingPage';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import { AppBar } from '@material-ui/core';
+import {FaShoppingBasket} from 'react-icons/fa';
 
 
 
@@ -22,13 +22,13 @@ export default function Navbar() {
              <Link to="/Products" className="linkDecor">Coffee</Link>
              </div>
              <div>
-             <h1>Cleo Coffee</h1>
+             <h1>Cleo's Coffee</h1>
              </div>
              <div>
              <Link to="/AboutUs" className="linkDecor">About</Link>
              </div>
              <div>
-             <Link to="/Cart" className="linkDecor">Cart</Link>
+             <Link to="/Cart" className="linkDecor"><FaShoppingBasket/></Link>
              </div>
             </nav>
           </div>
